@@ -19,7 +19,7 @@ Durante a fase de exploração de dados, duas características críticas foram i
 ### 🚺 1. Distribuição Demográfica e Viés de Gênero
 * **A Observação:** O dataset apresenta uma amostragem significativamente maior de registos do sexo masculino (`sex = 1`) em comparação ao sexo feminino (`sex = 0`).
 * **O Impacto Prático:** Este desequilíbrio exige que o modelo seja rigorosamente testado em subgrupos para garantir que a taxa de acerto permaneça consistente em ambas as anatomias, evitando decisões médicas enviesadas.
-<img width="695" height="395" alt="image" src="https://github.com/user-attachments/assets/c3ef5c97-a2a5-40bf-acc3-2d378ebd85ba" />
+<img width="695" height="395" alt="image" src="https://github.com/user-attachments/assets/558d64b9-ba63-4015-a0c8-c92d78155ba3" />
 
 ### 📦 2. Dispersão Métrico-Clínica e Outliers (Análise via Boxplot)
 A plotagem estatística utilizando diagramas de caixas (`sns.boxplot`) evidenciou um desafio clássico de engenharia de dados:

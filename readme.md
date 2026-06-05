@@ -19,19 +19,13 @@ Durante a fase de exploração de dados, duas características críticas foram i
 ### 🚺 1. Distribuição Demográfica e Viés de Gênero
 * **A Observação:** O dataset apresenta uma amostragem significativamente maior de registos do sexo masculino (`sex = 1`) em comparação ao sexo feminino (`sex = 0`).
 * **O Impacto Prático:** Este desequilíbrio exige que o modelo seja rigorosamente testado em subgrupos para garantir que a taxa de acerto permaneça consistente em ambas as anatomias, evitando decisões médicas enviesadas.
-
-> 💡 **📊 Espaço para o Gráfico de Gênero**
-> Arraste o seu gráfico de barras gerado pelo Seaborn para a linha abaixo para ilustrar esta distribuição:
-> ![Distribuição por Gênero](COLE_O_LINK_OU_ARRASTE_A_FOTO_AQUI)
+<img width="695" height="395" alt="image" src="https://github.com/user-attachments/assets/c3ef5c97-a2a5-40bf-acc3-2d378ebd85ba" />
 
 ### 📦 2. Dispersão Métrico-Clínica e Outliers (Análise via Boxplot)
 A plotagem estatística utilizando diagramas de caixas (`sns.boxplot`) evidenciou um desafio clássico de engenharia de dados:
 * **Assimetria de Escala:** Atributos como o colesterol (`chol`) e a pressão arterial em repouso (`trestbps`) possuem uma amplitude numérica massiva, enquanto variáveis como `fbs` (açúcar em jejum) e `target` são binárias.
 * **Presença de Outliers:** O Boxplot expôs pontos isolados que ultrapassam as barreiras dos quartis normais (pacientes com picos severos de colesterol). Esta descoberta justificou o uso obrigatório do `StandardScaler` para que os modelos baseados em distância (como o KNN) não fossem distorcidos por dados discrepantes.
-
-> 💡 **📦 Espaço para o Gráfico de Boxplot**
-> Arraste o seu gráfico de Boxplot para a linha abaixo para exibir a dispersão dos dados antes do treino:
-> ![Boxplot das Variáveis Clínicas](COLE_O_LINK_OU_ARRASTE_A_FOTO_AQUI)
+<img width="1296" height="505" alt="image" src="https://github.com/user-attachments/assets/d2d1e2f3-6f1c-483c-89c4-e7d57b96e049" />
 
 ---
 

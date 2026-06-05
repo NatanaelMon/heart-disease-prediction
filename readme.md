@@ -26,8 +26,9 @@ A plotagem estatística utilizando diagramas de caixas (`sns.boxplot`) evidencio
 * **Assimetria de Escala:** Atributos como o colesterol (`chol`) e a pressão arterial em repouso (`trestbps`) possuem uma amplitude numérica massiva, enquanto variáveis como `fbs` (açúcar em jejum) e `target` são binárias.
 * **Presença de Outliers:** O Boxplot expôs pontos isolados que ultrapassam as barreiras dos quartis normais (pacientes com picos severos de colesterol). Esta descoberta justificou o uso obrigatório do `StandardScaler` para que os modelos baseados em distância (como o KNN) não fossem distorcidos por dados discrepantes.
 <img width="1296" height="505" alt="image" src="https://github.com/user-attachments/assets/d2d1e2f3-6f1c-483c-89c4-e7d57b96e049" />
-* ** Havendo um ajuste logo em seguida removendo o máximo outliers que são considerados ruídos de forma que não comprometa e prejudique o aprendizado do modelo.
-* <img width="1296" height="505" alt="image" src="https://github.com/user-attachments/assets/7a59eba4-964e-4dba-9741-a16a03be193e" />
+
+* **Observação** um ajuste logo em seguida removendo o máximo outliers que são considerados ruídos de forma que não comprometa e prejudique o aprendizado do modelo.
+<img width="1296" height="505" alt="image" src="https://github.com/user-attachments/assets/7a59eba4-964e-4dba-9741-a16a03be193e" />
 
 ---
 
